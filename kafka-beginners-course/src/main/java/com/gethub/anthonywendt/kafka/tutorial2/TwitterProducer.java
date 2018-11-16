@@ -70,11 +70,11 @@ public class TwitterProducer {
                 twitterClient.stop();
             }
             if(msg != null) {
-//                logger.info(msg);
+                logger.info(msg);
 
-                ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topic, message);
-                producer.send(producerRecord);
-                producer.flush();
+//                ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topic, msg);
+//                producer.send(producerRecord);
+//                producer.flush();
 
 //                List<String> messageKeyValues = Arrays.asList(msg.split(","));
 //                List<String> textList = messageKeyValues.stream().filter(m -> m.split(":")[0].equals("\"text\"")).collect(Collectors.toList());
